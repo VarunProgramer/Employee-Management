@@ -1,0 +1,23 @@
+{%extends 'firsttry/base.html'%}
+
+{%block title%}EDIT DATA{%endblock%}
+
+{%block content%}
+
+<h1>Edit your Data</h1><hr>
+<form action="" method = 'POST'>
+    <div class="form">
+    <div class="EForm">
+        <b class="EFB">CodeNo:</b>  <input class="EFI" type="text" name="CodeNo" value="{{form.CodeNo}}">
+        <b class="EFB">Name:</b>    <input class="EFI" type="text" name="Name" value="{{form.Name}}">
+        <b class="EFB">Age:</b>     <input class="EFI" type="text" name="Age" value="{{form.Age}}">
+        <b class="EFB">Salary:</b>  <input class="EFI" type="text" name="Salary" value="{{form.Salary}}">
+        <b class="EFB">Address:</b> <input class="EFI" type="text" name="Address" value="{{form.Address}}">
+        <b class="EFB">Work:</b>    <input class="EFI" type="text" name="Work" value="{{form.Work}}">
+    </div>
+    {%csrf_token%}
+</div>
+<input type="submit" value = "Add Edit" class="BTN-A BTN-EF">
+</form>
+
+{%endblock%}

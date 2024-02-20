@@ -1,0 +1,47 @@
+{%extends 'firsttry/base.html'%}
+
+{%block title%}HOME BAGE{%endblock%}
+
+{%block content%}
+
+<h1>this is all of your data</h1><hr>
+
+<div class="tablew">
+    <div class="TBox">
+    <table>
+        <tr>
+            <th class = "THead">ID</th>
+            <th class = "THead">CODENO</th>
+            <th class = "THead">NAME</th>
+            <th class = "THead">AGE</th>
+            <th class = "THead">SALARY</th>
+            <th class = "THead">ADDRESS</th>
+            <th class = "THead">WORK</th>
+        </tr>
+        {%for el in emp_list%}
+        <tr class="TR-table">
+            <td>{{el.id}}</td>
+            <td>{{el.CodeNo}}</td>
+            <td>{{el.Name}}</td>
+            <td>{{el.Age}}</td>
+            <td>{{el.Salary}}</td>
+            <td>{{el.Address}}</td>
+            <td>{{el.Work}}</td>
+            <td><a href="/edit/{{el.id}}"><button class="BTN-E">EDIT</button></a></td>
+            <td><a href="/delete/{{el.id}}"><button class="BTN-D">DELETE</button></a></td>
+        </tr>
+        {% empty %}
+        <div class="msg" style="
+        position:relative;
+        top:140px;
+        ">
+            <h2 align = center>there is No DATA</h2>
+            <p align = center>pleace enter the new data</p>
+        </div>
+        {% endfor %}
+    </table>
+    </div>
+    <a href="create"><button class="BTN-A">Add New Data</button></a>
+</div>
+
+{%endblock%}

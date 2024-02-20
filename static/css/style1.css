@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(186, 230, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+hr{
+    width: 80%;
+    color: rgb(102, 102, 102);
+    opacity: .4;
+    box-shadow: 0px 0px .5px .5px black;
+    margin: 10px 0 20px 0;
+}
+h1{
+    color: rgb(51, 51, 51);
+}
+.TBox{
+    min-height: 350px;
+}
+table{
+    width: 80vw;
+}
+.THead{
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.BTN-E{
+    background-color: rgb(245, 160, 63);
+    border: 2px solid rgb(245, 160, 63);
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px 0 10px;
+    transition: .2s linear;
+}
+.BTN-E:hover{
+    background: none;
+    border: 2px solid rgb(245, 160, 63);
+    color: black;
+}
+.BTN-D{
+    background-color: rgb(245, 63, 63);
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px 0 10px;
+    scale: 1;
+    transition: .5s linear;
+    border: 2px solid rgb(245, 63, 63);
+}
+.BTN-D:hover{
+    background: none;
+    border: 2px solid rgb(245, 63, 63);
+    color: black;
+}
+.BTN-A{
+    background-color: rgb(35, 241, 145);
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px 0 10px;
+    scale: 1;
+    transition: .5s linear;
+    border: 2px solid rgb(35, 241, 145);
+}
+.BTN-A:hover{
+    background: none;
+    border: 2px solid rgb(35, 241, 145);
+    color: black;
+}
+.form{
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 30px;
+}
+.input_bar{
+    padding: 5px;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border: 2px solid rgb(35, 241, 145);
+    border-radius: 5px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, .3);
+}
+.CBTN{
+    margin-left: 10px;
+    width: 95%;
+    padding: 10px 160px;
+    transition: .5s linear;
+    border: 2px solid rgb(35, 241, 145);
+}
+.CBTN:hover{
+    background: none;
+    border: 2px solid rgb(35, 241, 145);
+    color: black;
+}
+.error{
+    margin-top: 10px;
+    width: 400px;
+    height: 350px;
+}
+.EForm{
+    display: flex;
+    flex-direction: column;
+    min-width: 80vw;
+    height: 50vh;
+}
+.EFB{
+    margin: 5px 0;
+}
+.EFI{
+    height: 20px;
+    padding: 15px 5px;
+    font-size: 1rem;
+}
+.BTN-EF{
+    position: relative;
+    top: 50px;
+}

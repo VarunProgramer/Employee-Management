@@ -1,0 +1,31 @@
+{%extends 'firsttry/base.html'%}
+
+{%block title%}CREATE DATA{%endblock%}
+
+{%block content%}
+
+<h1>Upload new Data</h1><hr>
+<form action="" method = 'POST'>
+    <div class="form">
+    <div class = 'input'>
+        {{form.CodeNo}}
+        {{form.Name}}
+        {{form.Age}}
+        {{form.Salary}}
+        {{form.Address}}
+        {{form.Work}}
+        <input type="submit" name="Add" value = "Add Data" class="BTN-A CBTN">
+    </div>
+    <div class="error">
+        {{form.CodeNo.errors}}
+        {{form.Name.errors}}
+        {{form.Age.errors}}
+        {{form.Salary.errors}}
+        {{form.Address.errors}}
+        {{form.Work.errors}}
+    </div>
+    {%csrf_token%}
+</div>
+</form>
+
+{%endblock%}
